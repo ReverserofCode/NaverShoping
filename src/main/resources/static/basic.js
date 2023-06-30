@@ -32,7 +32,6 @@ $(document).ready(function () {
     showProduct();
 })
 
-
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -84,9 +83,9 @@ function addHTML(itemDto) {
                 <img src="${itemDto.image}" alt="">
             </div>
             <div class="search-itemDto-center">
-                <div>Apple 아이맥 27형 2020년형 (MXWT2KH/A)</div>
+                <div>"${itemDto.title}"</div>
                 <div class="price">
-                    ${itemDto.lprice}
+                    "${itemDto.lprice}"
                     <span class="unit">원</span>
                 </div>
             </div>
